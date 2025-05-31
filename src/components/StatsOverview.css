@@ -1,10 +1,17 @@
-
 .stats-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .stats-container {
+    padding: 0 0.75rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }
 
 .stats-grid {
@@ -19,6 +26,12 @@
   }
 }
 
+@media (max-width: 480px) {
+  .stats-grid {
+    gap: 0.75rem;
+  }
+}
+
 .stat-card {
   background-color: white;
   border: 1px solid #e5e7eb;
@@ -26,6 +39,18 @@
   text-align: center;
   transition: box-shadow 0.2s ease;
   padding: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .stat-card {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card {
+    padding: 1rem;
+  }
 }
 
 .stat-card:hover {
@@ -69,6 +94,12 @@
   font-weight: bold;
   color: #111827;
   margin-bottom: 0.25rem;
+}
+
+@media (max-width: 480px) {
+  .stat-value {
+    font-size: 1.25rem;
+  }
 }
 
 .stat-label {

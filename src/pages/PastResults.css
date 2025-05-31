@@ -1,8 +1,19 @@
-
 .results-page {
   padding: 2rem 0;
   min-height: calc(100vh - 80px);
   background-color: #f9fafb;
+}
+
+@media (max-width: 768px) {
+  .results-page {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .results-page {
+    padding: 1rem 0;
+  }
 }
 
 .results-grid {
@@ -10,6 +21,14 @@
   gap: 1.5rem;
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .results-grid {
+    gap: 1rem;
+    padding: 0 0.75rem;
+  }
 }
 
 .result-card {
@@ -25,6 +44,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .result-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
 }
 
 .result-badge {
@@ -57,6 +84,12 @@
   margin-bottom: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .result-title {
+    font-size: 1.125rem;
+  }
+}
+
 .result-stats {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -65,6 +98,14 @@
   padding: 1rem;
   background-color: #f9fafb;
   border-radius: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .result-stats {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    padding: 0.75rem;
+  }
 }
 
 .vote-percentage,

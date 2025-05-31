@@ -1,13 +1,36 @@
-
 .decisions-page {
   padding: 2rem 0;
   min-height: calc(100vh - 80px);
   background-color: #f9fafb;
 }
 
+@media (max-width: 768px) {
+  .decisions-page {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .decisions-page {
+    padding: 1rem 0;
+  }
+}
+
 .page-header {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .page-header h1 {
@@ -17,9 +40,27 @@
   margin-bottom: 0.5rem;
 }
 
+@media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-header h1 {
+    font-size: 1.75rem;
+  }
+}
+
 .page-header p {
   font-size: 1.125rem;
   color: #6b7280;
+}
+
+@media (max-width: 480px) {
+  .page-header p {
+    font-size: 1rem;
+  }
 }
 
 .decisions-grid {
@@ -27,6 +68,14 @@
   gap: 1.5rem;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (max-width: 480px) {
+  .decisions-grid {
+    gap: 1rem;
+    padding: 0 0.75rem;
+  }
 }
 
 .decision-card {
@@ -42,6 +91,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 640px) {
+  .decision-header {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: flex-start;
+  }
 }
 
 .category-badge {
@@ -64,6 +121,12 @@
   font-weight: 600;
   color: #111827;
   margin-bottom: 0.75rem;
+}
+
+@media (max-width: 768px) {
+  .decision-title {
+    font-size: 1.125rem;
+  }
 }
 
 .decision-description {
@@ -96,6 +159,13 @@
 .vote-buttons {
   display: flex;
   gap: 0.75rem;
+}
+
+@media (max-width: 640px) {
+  .vote-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 .vote-btn {
